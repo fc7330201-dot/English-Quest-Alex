@@ -1,0 +1,13 @@
+ENGLISH QUEST — ALEX CON GEMINI
+
+Contenido:
+- index.html: conserva las lecciones, el personaje y la práctica de voz; añade conversación por voz y texto con Gemini.
+- netlify/functions/alex.mjs: función segura que llama a Gemini desde Netlify.
+- netlify.toml: configura la carpeta de funciones.
+
+IMPORTANTE:
+1. La variable GEMINI_API_KEY debe existir en Netlify y su alcance debe incluir Functions.
+2. No pegues la clave API dentro del HTML ni la compartas.
+3. Este paquete es para el sitio independiente English Quest Alex, no para Esther.
+4. Después de subir los archivos al repositorio/contenido del sitio, publica un nuevo deploy.
+5. Si el modelo indicado no está disponible para tu clave/proyecto, revisa el nombre de modelo disponible en Google AI Studio y actualiza la constante `model` en alex.mjs.
